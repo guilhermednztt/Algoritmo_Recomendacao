@@ -19,17 +19,15 @@ def formulaPearson(x, y):
 
     mediaX = np.average(x)
     mediaY = np.average(y)
-    desvioX = []
-    desvioY = []
     soma_produto_desvio = 0
     soma_quadrado_desvio = 0
 
     for i in range(len(x)):
-        desvioX.append(x[i] - mediaX)
-        desvioY.append(y[i] - mediaY)
-    
-    soma_produto_desvio = sum([a * b for a, b in zip(desvioX, desvioY)])
-    soma_quadrado_desvio = sum([pow(a, 2) for a in desvioX]) * sum([pow(a, 2) for a in desvioY])
+        desvioX = (x[i] - mediaX)
+        desvioY = (y[i] - mediaY)
+        soma_produto_desvio += desvioX * desvioY
+        soma_quadrado_desvio += pow(desvioX, 2) * pow(desvioY, 2)
+        
     soma_quadrado_desvio = sqrt(soma_quadrado_desvio)
 
     return soma_produto_desvio / soma_quadrado_desvio
