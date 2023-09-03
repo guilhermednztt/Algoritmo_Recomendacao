@@ -81,7 +81,8 @@ def formulaPearson(x, y):
 
 <br><br>
 
+<a href="https://sol.sbc.org.br/journals/index.php/reic/article/view/2144">
 <p align="center">
   <b>Python, Inteligência Artificial, Algoritmo de Recomendação, Pearson.</b><br>
   Guilherme Donizetti - 2023.
-</p>
+</p></a>
